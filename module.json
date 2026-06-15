@@ -1,0 +1,35 @@
+{
+  "id": "dias-embarcado",
+  "name": "Dias Embarcado",
+  "version": "0.1.0",
+  "minCoreVersion": "0.3.0",
+  "author": "brodrigues0ll",
+  "description": "*",
+  "category": "produtividade",
+  "license": "MIT",
+  "homepage": "https://github.com/brodrigues0ll/module-dias-embarcado",
+  "tags": ["dias-embarcado"],
+  "dependencies": [],
+  "permissions": [
+    "dias-embarcado:items:read",
+    "dias-embarcado:items:write",
+    "dias-embarcado:items:delete"
+  ],
+  "emits": [
+    "dias-embarcado:item:created",
+    "dias-embarcado:item:updated",
+    "dias-embarcado:item:deleted"
+  ],
+  "listens": [
+    "core:user:deleted"
+  ],
+  "menuItems": [
+    {
+      "label": "Dias Embarcado",
+      "icon": "box",
+      "path": "/dias-embarcado",
+      "order": 10,
+      "permission": "dias-embarcado:items:read"
+    }
+  ]
+}
